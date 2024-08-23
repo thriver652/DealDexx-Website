@@ -23,8 +23,8 @@ const SpecialOffers = () => {
             </h3>
             <p className="text-lg text-gray-600 mb-4">
               Discover the latest trends and styles with our unbeatable fashion
-              deals. Whether you're updating your wardrobe or finding the
-              perfect gift, we've got you covered.
+              deals. Whether you&apos;re updating your wardrobe or finding the
+              perfect gift, we&apos;ve got you covered.
             </p>
             <button className="btn-primary mt-auto">Shop Now</button>
           </div>
