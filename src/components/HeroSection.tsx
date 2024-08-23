@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="hero bg-[#1E3A8A] text-white py-20 text-center">
+    <section className="hero bg-[#1E3A8A] text-white py-20 mt-20 text-center">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
           All Your Shopping Needs in One Place

@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-4 bg-gray-800 text-white">
+    <header className="fixed top-0 left-0 w-full bg-gray-800 text-white z-50 py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
         <h1 className="text-xl font-bold">DealDeX</h1>
         {/* Desktop Navigation */}
