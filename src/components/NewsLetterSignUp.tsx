@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsletterSignup = () => {
   return (
-    <section className="py-16 bg-blue-900 text-white text-center">
+    <section id="contact" className="py-16 bg-blue-900 text-white text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold mb-4 flex items-center justify-center">
           <i className="bi bi-envelope-open text-3xl mr-2"></i>

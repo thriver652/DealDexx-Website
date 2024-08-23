@@ -6,15 +6,16 @@ import Testimonials from "@/components/Testimonials";
 import SpecialOffers from "@/components/SpecialOffers";
 import NewsletterSignup from "@/components/NewsLetterSignUp";
 import AboutUs from "@/components/AboutUs";
-
+import ProductCategories from "@/components/ProductCategories";
 export default function Home() {
   return (
     <div>
       <Header />
       <HeroSection />
       <FeaturesSection />
-      <Testimonials />
+      <ProductCategories />
       <SpecialOffers />
+      <Testimonials />
       <NewsletterSignup />
       <AboutUs />
       <Footer />

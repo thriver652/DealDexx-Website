@@ -1,4 +1,4 @@
-// src/components/Header.tsx
+import React from "react";
 
 const Header = () => {
   return (
@@ -8,16 +8,24 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="#features">Features</a>
+              <a href="#features" className="hover:underline">
+                Features
+              </a>
             </li>
             <li>
-              <a href="#categories">Categories</a>
+              <a href="#categories" className="hover:underline">
+                Categories
+              </a>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about" className="hover:underline">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" className="hover:underline">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

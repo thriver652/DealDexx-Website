@@ -2,15 +2,15 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="py-16 bg-blue-50 text-center">
+    <section id="about" className="py-16 bg-blue-50 text-center">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-semibold mb-6 flex items-center justify-center">
           <i className="bi bi-info-circle text-4xl mr-4 text-blue-600"></i>
           About DealDeX
         </h2>
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-gray-700 leading-relaxed">
-          At DealDeX, we redefine shopping with a focus on convenience,
-          variety, and value. Discover a wide range of products—from fashion and
+          At DealDeX, we redefine shopping with a focus on convenience, variety,
+          and value. Discover a wide range of products—from fashion and
           electronics to groceries and meals—all in one place. Our aim is to
           make shopping simpler, faster, and more affordable, ensuring you get
           the best deals and top quality.

@@ -5,15 +5,15 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto text-center">
         <div className="mb-6">
-          <Link href="/" className="text-white hover:underline mx-2">
+          <Link href="#home" className="text-white hover:underline mx-2">
             Home
           </Link>
           |
-          <Link href="/about" className="text-white hover:underline mx-2">
+          <Link href="#about" className="text-white hover:underline mx-2">
             About Us
           </Link>
           |
-          <Link href="/contact" className="text-white hover:underline mx-2">
+          <Link href="#contact" className="text-white hover:underline mx-2">
             Contact
           </Link>
         </div>
