@@ -1,12 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    // Type assertion to ensure event.target is an HTMLElement
+    const target = event.target as HTMLElement;
+    if (menuRef.current && !menuRef.current.contains(target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener for clicks outside the menu
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 w-full bg-gray-800 text-white z-50 py-4">
@@ -25,7 +44,6 @@ const Header = () => {
                 Categories
               </a>
             </li>
-
             <li>
               <a href="#contact" className="hover:underline">
                 Contact
@@ -61,6 +79,7 @@ const Header = () => {
       </div>
       {/* Mobile Navigation Menu */}
       <nav
+        ref={menuRef}
         className={`md:hidden fixed top-0 left-0 w-full bg-gray-800 text-white transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "transform translate-x-0" : "transform -translate-x-full"
         }`}
@@ -85,13 +104,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="#about" className="hover:underline" onClick={toggleMenu}>
-              About Us
+            <a href="#contact" className="hover:underline" onClick={toggleMenu}>
+              Contact
             </a>
           </li>
           <li>
-            <a href="#contact" className="hover:underline" onClick={toggleMenu}>
-              Contact
+            <a href="#about" className="hover:underline" onClick={toggleMenu}>
+              About Us
             </a>
           </li>
         </ul>
