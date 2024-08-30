@@ -2,9 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=FK+Grotesk:wght@400;500;700&display=swap");
 
 /* src/app/globals.css */
+@font-face {
+  font-family: "FK Grotesk";
+  src: url("/path-to-fonts/FKGrotesk-Regular.woff2") format("woff2"),
+    url("/path-to-fonts/FKGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "FK Grotesk";
+  src: url("/path-to-fonts/FKGrotesk-Bold.woff2") format("woff2"),
+    url("/path-to-fonts/FKGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* src/app/globals.css */
+:root {
+  --font-fk-grotesk: "FK Grotesk", sans-serif; /* Replace with your desired font stack */
+}
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
