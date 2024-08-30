@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,18 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full bg-white text-black z-50 py-2 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <h1 className="text-2xl  font-semibold">DealDeX</h1>
+        {/* Logo and Title */}
+        <div className="flex items-center space-x-4">
+          <Image
+            src="/images/dealdex_white.jpg"
+            alt="DealDeX Logo"
+            width={40}
+            height={40}
+          />
+          <h1 className="text-2xl font-semibold mt-1 hidden md:block">
+            DealDeX
+          </h1>
+        </div>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex">
           <ul className="flex space-x-4">
