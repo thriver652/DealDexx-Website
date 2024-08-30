@@ -4,22 +4,57 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-6">
       <div className="container mx-auto text-center">
-        <div className="mb-4">
-          <Link href="/" className="text-white hover:underline">
-            Home
-          </Link>{" "}
-          |
-          <Link href="/about" className="text-white hover:underline">
-            {" "}
-            About Us
-          </Link>{" "}
-          |
-          <Link href="/contact" className="text-white hover:underline">
-            {" "}
-            Contact
+        {/* Navigation Links */}
+        <div className="mb-6 flex justify-center flex-wrap gap-4">
+          <Link href="#home">
+            <div>Home</div>
+          </Link>
+          <Link href="#about">
+            <div>About Us</div>
+          </Link>
+          <Link href="#contact">
+            <div>Contact</div>
           </Link>
         </div>
-        <p>&copy; {new Date().getFullYear()} DealDexx. All rights reserved.</p>
+        {/* Social Media Links */}
+        <div className="mb-6 flex justify-center gap-4">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-600"
+          >
+            <i className="bi bi-facebook text-2xl"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-400"
+          >
+            <i className="bi bi-twitter text-2xl"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-pink-500"
+          >
+            <i className="bi bi-instagram text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/dealdex-connect/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-500"
+          >
+            <i className="bi bi-linkedin text-2xl"></i>
+          </a>
+        </div>
+        {/* Copyright */}
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} DealDeX. All rights reserved.
+        </p>
       </div>
     </footer>
   );

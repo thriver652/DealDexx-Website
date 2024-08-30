@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "DealDexx - Revolutionizing E-commerce",
+  title: "DealDeX - Revolutionizing E-commerce",
   description:
     "Your one-stop platform for shopping, food delivery, and groceries.",
 };
